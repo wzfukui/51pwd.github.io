@@ -287,16 +287,16 @@ const translations = {
     'en': 'What is One Site One Password?'
   },
   'faq_a1': {
-    'zh': '一站一密是一个密码生成器，它使用简单算法为每个网站生成唯一的强密码。与传统密码管理不同，我们不存储密码，而是在需要时生成。',
-    'en': 'One Site One Password is a password generator that uses a simple algorithm to create unique strong passwords for each website. Unlike traditional password managers, we don\'t store passwords but generate them when needed.'
+    'zh': '一站一密是一个密码生成器，它使用简单算法为每个网站生成唯一的强密码。与传统密码管理不同，我们不存储密码，而是在需要时生成。只需要记住一个暗语，即可为多个网站生成完全不同的高强度密码。从此免除密码记忆、拖库恐慌等各种烦恼。',
+    'en': 'One Site One Password is a password generator that uses a simple algorithm to create unique strong passwords for each website. Unlike traditional password managers, we don\'t store passwords but generate them when needed. You only need to remember one cipher to generate completely different strong passwords for multiple websites, eliminating the hassle of password memorization and database leak concerns.'
   },
   'faq_q2': {
     'zh': '为什么一站一密比密码管理更安全？',
     'en': 'Why is OSOP more secure than password managers?'
   },
   'faq_a2': {
-    'zh': '传统密码管理器存储所有密码，成为攻击目标。一站一密不存储密码，没有数据库可被黑。所有密码生成在本地完成，提供更高安全性。',
-    'en': 'Traditional password managers store all passwords, becoming targets for attacks. OSOP doesn\'t store passwords, so there\'s no database to hack. All password generation happens locally, providing better security.'
+    'zh': '传统密码管理器存储所有密码，成为攻击目标。一站一密不存储密码，没有数据库可被黑。所有密码生成在本地完成，提供更高安全性。众所周知，曾有多家知名网站被拖库，导致用户密码泄露。大多数人在多个网站使用相同或相似密码，一旦某处密码泄露，可能危及您在其他网站的账号安全。一站一密为每个网站生成独立密码，即使一个密码被泄露，其他网站账号依然安全。',
+    'en': 'Traditional password managers store all passwords, becoming targets for attacks. OSOP doesn\'t store passwords, so there\'s no database to hack. All password generation happens locally, providing better security. As we know, many well-known websites have experienced database breaches, resulting in password leaks. Most people use identical or similar passwords across multiple sites, so once a password is leaked, your accounts on other websites may be at risk. OSOP generates independent passwords for each website, so even if one password is compromised, your other accounts remain secure.'
   },
   'faq_q3': {
     'zh': '如何使用一站一密？',
@@ -311,8 +311,8 @@ const translations = {
     'en': 'What if I forget my cipher?'
   },
   'faq_a4': {
-    'zh': '暗语是生成密码的关键。如果忘记，将无法重新生成相同密码。建议选择一个有意义但不易被猜到的暗语，或将其安全记录在离线介质上。',
-    'en': 'The cipher is key to generating passwords. If forgotten, you won\'t be able to regenerate the same passwords. We recommend choosing a meaningful but not easily guessable cipher, or securely recording it offline.'
+    'zh': '暗语是生成密码的关键。如果忘记，将无法重新生成相同密码。建议选择一个有意义但不易被猜到的暗语，或将其安全记录在离线介质上。可以考虑使用一个复杂但容易记忆的短语，如一句话的首字母组合。',
+    'en': 'The cipher is key to generating passwords. If forgotten, you won\'t be able to regenerate the same passwords. We recommend choosing a meaningful but not easily guessable cipher, or securely recording it offline. Consider using something complex yet memorable, like the first letters of a phrase.'
   },
   'faq_q5': {
     'zh': '每次生成的密码是否相同？',
@@ -327,8 +327,8 @@ const translations = {
     'en': 'How strong are the passwords?'
   },
   'faq_a6': {
-    'zh': '生成的密码包含大小写字母、数字和特殊字符，符合大多数网站要求。提供8位、14位和20位三种长度选择，适应不同安全需求。',
-    'en': 'Generated passwords include uppercase and lowercase letters, numbers, and special characters, meeting most website requirements. We offer three lengths: 8, 14, and 20 characters to accommodate different security needs.'
+    'zh': '生成的密码包含大小写字母、数字和特殊字符，符合大多数网站要求。提供8位、14位和20位三种长度选择，适应不同安全需求。采用MD5+Salt+Base64多重加密，确保密码强度和安全性。',
+    'en': 'Generated passwords include uppercase and lowercase letters, numbers, and special characters, meeting most website requirements. We offer three lengths: 8, 14, and 20 characters to accommodate different security needs. We use MD5+Salt+Base64 multi-layer encryption to ensure password strength and security.'
   },
   'faq_q7': {
     'zh': '是否支持多种设备？',
@@ -337,6 +337,22 @@ const translations = {
   'faq_a7': {
     'zh': '是的，一站一密可在任何浏览器中使用，同时提供Chrome扩展版本。只要使用相同的暗语和网站名，在任何设备上都能生成相同的密码。',
     'en': 'Yes, OSOP works in any browser and offers a Chrome extension. As long as you use the same cipher and website name, you\'ll generate identical passwords on any device.'
+  },
+  'faq_q8': {
+    'zh': '如何处理主要电子邮件账号的密码？',
+    'en': 'How should I handle passwords for my main email accounts?'
+  },
+  'faq_a8': {
+    'zh': '主要电子邮件账号通常用于密码找回，因此我们不建议使用一站一密来管理这些账号的密码。对于这些关键账号，建议使用其他安全的密码管理方式。',
+    'en': 'Main email accounts are typically used for password recovery, so we don\'t recommend using OSOP to manage passwords for these accounts. For these critical accounts, we suggest using other secure password management methods.'
+  },
+  'faq_q9': {
+    'zh': '为什么我可以完全信任这个工具？',
+    'en': 'Why can I completely trust this tool?'
+  },
+  'faq_a9': {
+    'zh': '一站一密完全在您的本地浏览器中运行，不向任何服务器提交信息。源代码完全开源，您可以审查每一行代码。如果对安全性有极高要求，您甚至可以从GitHub下载源代码，断开网络后在本地运行。',
+    'en': 'OSOP runs entirely in your local browser and doesn\'t submit any information to any server. The source code is completely open-source, allowing you to review every line of code. If you have extremely high security requirements, you can even download the source code from GitHub and run it locally with your network disconnected.'
   },
 
   // 隐私政策页面
