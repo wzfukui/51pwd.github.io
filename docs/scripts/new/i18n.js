@@ -112,6 +112,10 @@ const translations = {
     'zh': '生成密码',
     'en': 'Generate'
   },
+  'nav_install_extension': {
+    'zh': '安装Chrome插件',
+    'en': 'Install Chrome Extension'
+  },
   'nav_features': {
     'zh': '功能特点',
     'en': 'Features'
@@ -418,6 +422,10 @@ const translations = {
     'zh': '网页版',
     'en': 'Web Version'
   },
+  'footer_extension': {
+    'zh': 'Chrome插件',
+    'en': 'Chrome Extension'
+  },
   'footer_version': {
     'zh': '版本',
     'en': 'Version'
@@ -483,4 +491,4 @@ window.OSOP_i18n = {
   loadLanguagePreference,
   updatePageText,
   get currentLanguage() { return currentLanguage; }
-}; 
+};
